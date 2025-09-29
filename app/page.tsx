@@ -85,19 +85,20 @@ export default function HomePage() {
         <h2 className="text-3xl font-bold text-blue-600 text-center mb-6">Testimonials</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <Card className="glass-effect p-6 hover:shadow-xl transition-shadow duration-300">
-            <p>"Best car wash in Dubai! Eco-friendly and efficient."</p>
+            <p>&quot;Best car wash in Dubai! Eco-friendly and efficient.&quot;</p>
             <span className="mt-4 block font-semibold">– Ahmed K.</span>
           </Card>
           <Card className="glass-effect p-6 hover:shadow-xl transition-shadow duration-300">
-            <p>"Professional staff and zero scratches on my car."</p>
+            <p>&quot;Professional staff and zero scratches on my car.&quot;</p>
             <span className="mt-4 block font-semibold">– Fatima R.</span>
           </Card>
           <Card className="glass-effect p-6 hover:shadow-xl transition-shadow duration-300">
-            <p>"Quick service and very eco-conscious. Highly recommend."</p>
+            <p>&quot;Quick service and very eco-conscious. Highly recommend.&quot;</p>
             <span className="mt-4 block font-semibold">– John D.</span>
           </Card>
         </div>
       </section>
+
     </div>
   );
 }
