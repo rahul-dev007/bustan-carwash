@@ -1,103 +1,103 @@
+"use client";
+
 import Image from "next/image";
-
-export default function Home() {
+import Card from "@/components/ui/Card";
+export default function HomePage() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+    <div className="container mx-auto px-4 py-12 space-y-16">
+      {/* Hero Section */}
+      <section className="relative text-center">
         <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+          src="/image/backgroun-img-1.png"
+          alt="Car Wash"
+          width={1200}
+          height={500}
+          className="rounded-xl object-cover w-full h-[400px] md:h-[500px] brightness-75"
         />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 animate-fadeIn">
+            Bustan Alzuhoor Parking Car Washing L.L.C
+          </h1>
+          <p className="text-lg md:text-xl animate-fadeIn delay-200">
+            Eco-friendly, scratch-proof, and innovative car wash service in Dubai.
+          </p>
+          <button className="mt-6 px-6 py-3 bg-blue-600 hover:bg-blue-700 rounded-full text-white font-semibold shadow-lg glass-effect animate-fadeIn delay-400">
+            Book a Wash
+          </button>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section>
+
+      {/* Vision & Mission */}
+      <section className="grid md:grid-cols-2 gap-8">
+        <Card className="glass-effect p-6 animate-slideInLeft">
+          <h2 className="text-2xl font-semibold text-blue-500 mb-2">Our Vision</h2>
+          <p>
+            To become the most innovative and eco-friendly mobile car wash company in U.A.E, using state-of-the-art technology.
+          </p>
+        </Card>
+        <Card className="glass-effect p-6 animate-slideInRight">
+          <h2 className="text-2xl font-semibold text-blue-500 mb-2">Our Mission</h2>
+          <p>
+            We provide the best eco-friendly car cleaning services with zero water wastage, preserving the environment for future generations.
+          </p>
+        </Card>
+      </section>
+
+      {/* Objectives */}
+      <section className="animate-fadeIn">
+        <h2 className="text-2xl font-semibold text-blue-500 mb-4">Objectives</h2>
+        <ul className="list-disc pl-6 space-y-2">
+          <li>Expand our client base across the UAE.</li>
+          <li>Establish our brand through innovative services.</li>
+          <li>Ensure mutual benefits for both our company and clients.</li>
+        </ul>
+      </section>
+
+      {/* Services */}
+      <section className="space-y-8">
+        <h2 className="text-3xl font-bold text-blue-600 text-center mb-6">Our Services</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="glass-effect p-6 hover:scale-105 transition-transform duration-300">
+            <h3 className="text-xl font-semibold mb-2">Eco-Friendly Wash</h3>
+            <p>Waterless, scratch-proof cleaning using eco-friendly solutions.</p>
+          </Card>
+          <Card className="glass-effect p-6 hover:scale-105 transition-transform duration-300">
+            <h3 className="text-xl font-semibold mb-2">Interior Detailing</h3>
+            <p>Deep clean of car interiors, including carpets and upholstery.</p>
+          </Card>
+          <Card className="glass-effect p-6 hover:scale-105 transition-transform duration-300">
+            <h3 className="text-xl font-semibold mb-2">Exterior Polishing</h3>
+            <p>Shine and protect your car’s paint with eco-friendly polish.</p>
+          </Card>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="text-center space-y-6 animate-fadeIn">
+        <h2 className="text-3xl font-bold text-blue-600">Why Choose Us?</h2>
+        <p className="max-w-2xl mx-auto text-gray-700">
+          We combine innovation, sustainability, and premium service to deliver a superior car wash experience. From advanced waterless technologies to skilled staff, every car is treated like our own.
+        </p>
+      </section>
+
+      {/* Testimonials */}
+      <section className="space-y-6">
+        <h2 className="text-3xl font-bold text-blue-600 text-center mb-6">Testimonials</h2>
+        <div className="grid md:grid-cols-3 gap-6">
+          <Card className="glass-effect p-6 hover:shadow-xl transition-shadow duration-300">
+            <p>"Best car wash in Dubai! Eco-friendly and efficient."</p>
+            <span className="mt-4 block font-semibold">– Ahmed K.</span>
+          </Card>
+          <Card className="glass-effect p-6 hover:shadow-xl transition-shadow duration-300">
+            <p>"Professional staff and zero scratches on my car."</p>
+            <span className="mt-4 block font-semibold">– Fatima R.</span>
+          </Card>
+          <Card className="glass-effect p-6 hover:shadow-xl transition-shadow duration-300">
+            <p>"Quick service and very eco-conscious. Highly recommend."</p>
+            <span className="mt-4 block font-semibold">– John D.</span>
+          </Card>
+        </div>
+      </section>
     </div>
   );
 }
