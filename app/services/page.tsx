@@ -15,7 +15,7 @@ export default function ServicesPage() {
     {
       title: "Interior Detailing",
       description:
-        "Deep cleaning of seats, carpets, and dashboard to keep your car’s interior fresh and spotless.",
+        "Deep cleaning of seats, carpets, and dashboard to keep your cars interior fresh and spotless.",
       icon: <Sparkles className="w-8 h-8 text-yellow-500" />,
     },
     {
